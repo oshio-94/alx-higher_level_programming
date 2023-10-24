@@ -2,7 +2,7 @@
 const request = require('request');
 
 request(process.argv[2], (error, response, body) => {
-  if (err) throw error;
+  if (error) throw error;
   else {
     const resp = {};
     const json = JSON.parse(body);
@@ -17,4 +17,3 @@ request(process.argv[2], (error, response, body) => {
     console.log(resp);
   }
 });
-
