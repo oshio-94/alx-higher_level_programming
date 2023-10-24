@@ -5,6 +5,6 @@ request(`${url}process.argv[2]`, (error, response, body) => {
   if (error) throw error;
   const js_res = response;
   const res = JSON.stringify(js_res);
-  console.log(res);
+  console.log(res.title);
 });
  
