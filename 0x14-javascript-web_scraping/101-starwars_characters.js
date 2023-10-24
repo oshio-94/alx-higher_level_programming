@@ -5,7 +5,7 @@ let id = parseInt(process.argv[2], 10);
 let characters = [];
 
 request(url, (error, response, body) => {
-  if (error) throw error; 
+  if (error) throw error;
   else {
     const resp = JSON.parse(body);
     const results = resp.results;
@@ -28,4 +28,3 @@ request(url, (error, response, body) => {
     }
   }
 });
-
