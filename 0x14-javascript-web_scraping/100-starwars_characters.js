@@ -2,7 +2,7 @@
 const request = require('request');
 'http://swapi.co/api/films/' + process.argv[2];
 
-request('http://swapi.co/api/films/' + process.argv[2], (error, response, body) {
+request('http://swapi.co/api/films/' + process.argv[2], (error, response, body) => {
   if (error) throw error;
   const resp = JSON.parse(body);
   const characters = resp.characters;
