@@ -6,8 +6,8 @@ request(url + '/', (error, response, body) => {
   else {
     const res = JSON.parse(body);
     const lst = [];
-    if (res.characters = 'https://swapi-api.alx-tools.com/api/people/18/') {
-	    lst.append(res.title);
+    if (res.results.characters = 'https://swapi-api.alx-tools.com/api/people/18/') {
+	    lst.append(res.results.title);
     }
     console.log(lst.length);
   }
