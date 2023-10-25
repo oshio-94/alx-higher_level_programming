@@ -15,7 +15,6 @@ request(url, (error, response, body) => {
     for (let j = 0; j < characters.length; j++) {
       request(characters[j], (error, response, body) => {
         if (error) throw error;
-	//console.log(characters.length)
         console.log(JSON.parse(body).name);
       });
     }
